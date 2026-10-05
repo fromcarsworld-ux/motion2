@@ -1,0 +1,71 @@
+export const T = {
+  fps: 24,
+  W: 1920,
+  H: 1080,
+  DUR: 1080,
+  c: {
+    purple: '#6108f5',
+    black: '#000000',
+    white: '#ffffff',
+    ink: '#0a0a0a',
+    hair: '#ececf3',
+    panel: '#f3f3f3',
+    lilac: '#efe6ff',
+    ghost: 'rgba(255,255,255,0.45)',
+    darkPurple: '#0b0618',
+    muted: '#6b6b76',
+    glow: [
+      '#ffffff',
+      '#e2d2ff',
+      '#a97dff',
+      '#6108f5',
+      '#1d0646',
+      'rgba(0,0,0,0)',
+    ],
+    glowStops: [0, 0.14, 0.32, 0.52, 0.74, 1],
+  },
+  font: {
+    sans: 'Inter, "Inter Display", system-ui, sans-serif',
+    mono: '"JetBrains Mono", "Geist Mono", ui-monospace, monospace',
+  },
+  size: {
+    statement: 116,
+    hero: 138,
+    chip: 92,
+    chipSm: 80,
+    brand: 100,
+    mono: 32,
+  },
+  ease: {
+    expoOut: [0.16, 1, 0.3, 1],
+    quintOut: [0.22, 1, 0.36, 1],
+    quartOut: [0.25, 1, 0.5, 1],
+    cubicInOut: [0.65, 0, 0.35, 1],
+    expoIn: [0.7, 0, 0.84, 0],
+    cubicIn: [0.32, 0, 0.67, 0],
+  },
+  spring: {
+    overshoot: { stiffness: 180, damping: 20, mass: 0.8 },
+    icon: { stiffness: 140, damping: 16, mass: 0.9 },
+    settle: { stiffness: 220, damping: 30, mass: 0.7 },
+  },
+  radius: {
+    chip: 40,
+    button: 44,
+    icon: 20,
+    tile: 32,
+  },
+  grid: {
+    plusPitch: 112,
+    ringPitch: 64,
+    mosaicCell: 120,
+    barPitch: 38,
+  },
+} as const;
+
+export const SCENES = {
+  S1: { from: 0, dur: 248 },
+  S2: { from: 248, dur: 280 },
+  S3: { from: 528, dur: 308 },
+  S4: { from: 836, dur: 244 },
+} as const;
