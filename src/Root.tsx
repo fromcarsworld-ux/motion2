@@ -2,7 +2,7 @@ import React from 'react';
 import { Composition, registerRoot } from 'remotion';
 import { loadFont as loadInter } from '@remotion/google-fonts/Inter';
 import { loadFont as loadJetBrainsMono } from '@remotion/google-fonts/JetBrainsMono';
-import Main from './Scene4';
+import Main from './DesignMe';
 import { T } from './tokens';
 
 loadInter('normal', {
