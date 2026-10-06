@@ -348,6 +348,11 @@ export const WordSwap: React.FC<WordSwapProps> = ({
       style={{
         display: 'grid',
         gridTemplateAreas: '"swap"',
+        position: 'relative',
+        overflow: 'hidden',
+        isolation: 'isolate',
+        contain: 'paint',
+        verticalAlign: 'top',
         ...style,
       }}
     >
@@ -360,6 +365,8 @@ export const WordSwap: React.FC<WordSwapProps> = ({
           transform: `translate3d(0, ${-y * outProgress}px, 0)`,
           filter: `blur(${(outBlur * outProgress).toFixed(2)}px)`,
           willChange: 'transform, filter, opacity',
+          backfaceVisibility: 'hidden',
+          pointerEvents: 'none',
         }}
       >
         {from}
@@ -372,6 +379,8 @@ export const WordSwap: React.FC<WordSwapProps> = ({
           transform: `translate3d(0, ${y * (1 - inProgress)}px, 0)`,
           filter: `blur(${(inBlur * (1 - inProgress)).toFixed(2)}px)`,
           willChange: 'transform, filter, opacity',
+          backfaceVisibility: 'hidden',
+          pointerEvents: 'none',
         }}
       >
         {to}
