@@ -21,6 +21,7 @@ import { SCENES, T } from './tokens';
 import Scene1 from './Scene1';
 import Scene2 from './Scene2';
 import Scene3 from './Scene3';
+import FounderFlow from './FounderFlow';
 
 export const FROM = 836;
 export const DUR = 244;
@@ -970,7 +971,7 @@ export const Main: React.FC = () => {
         <Scene3 />
       </Sequence>
       <Sequence from={SCENES.S4.from} durationInFrames={SCENES.S4.dur}>
-        <Scene4 />
+        <FounderFlow />
       </Sequence>
       <CutSmears frame={frame} />
     </AbsoluteFill>
