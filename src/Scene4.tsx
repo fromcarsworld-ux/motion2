@@ -22,6 +22,7 @@ import Scene1 from './Scene1';
 import Scene2 from './Scene2';
 import Scene3 from './Scene3';
 import FounderFlow from './FounderFlow';
+import CursorOverlay from './CursorOverlay';
 
 export const FROM = 836;
 export const DUR = 244;
@@ -973,6 +974,7 @@ export const Main: React.FC = () => {
       <Sequence from={SCENES.S4.from} durationInFrames={SCENES.S4.dur}>
         <FounderFlow />
       </Sequence>
+      <CursorOverlay />
       <CutSmears frame={frame} />
     </AbsoluteFill>
   );
